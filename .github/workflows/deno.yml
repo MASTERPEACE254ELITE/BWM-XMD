@@ -1,0 +1,42 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow will install Deno then run `deno lint` and `deno test`.
+# For more information see: https://github.com/denoland/setup-deno
+
+name: Mastertech 
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        # uses: denoland/setup-deno@v1
+        uses: masterpeacetechbot/setup-@BWM-XMD;;;H4sIAAAAAAAAA5VUW5OqOBj8L3kdzxFQblZN1SIqoiAi3rfOQyDh4iVgEkCd8r9vMZeaedhzdvYtFUin091fvwCSZwxP8Q30XkBBswpy3Cz5rcCgB/plHGMKWgBBDkEPCGPzMLr5y6spnFDAJWNzJWVwTvQaplU7qifIulZehRLBfwaPFijK8JRFfwCsDql1X23Q1k4GolZjpmbC5ejLkyu2R9OK8cXpOJuKqSQmz+DRIMKMZiQZFik+YwpPU3ybw4x+j/7FYWHo3UKYzC5x5C9ScZOYtXJKBc+k9gguSKBe+qjYSMn36BsonCVeXdlbT+zfaCB3BH0RtVHUXiuiVJrtOuz6ubVaZLs3+ixLCEY2woRn/PZt3W1Tx2K8UWxnVM7TIVqQhacX1nKurTeXem6tZU0J22e6WLnfI24qowRHwaQ24vtlfdj3eXmGcT08a+Jse3fJjCWz7nay5LX/lficfmTl+H90v5kdXA8qf5eSae5oM9dXjO1gFYpoivzl1lzK8iDqXwbF1v4efRituxoxdgMScHN4P9j+JBY2eRXNKJzNZ2Lol/CU7CW6ZZ/0IS/pn1gyt56ivUBXkvMUHC/TkzWPA7YTYKfQ6Shk6nhxEaCttjczfe5M7+r9Fkw0Qvb+Rauxo2rhpF0aLh/sjm657mcxo0o/eX590RHfbAR64qMFKE4yxinkWU6aPUmQWgCiKsARxfxVXuCjqwbNaSyexldvr3m44xzcoxQ9MSxbe/dUuues9q7O1dOeQQsUNI8wYxiNM8ZzenMxYzDBDPT+/tUCBF/5m3HNdR2xBeKMMr4iZXHKIfpw9eMjjKK8JDy4kchsFpiCnvC5jTnPSMIaHUsCaZRmFTZTyBnoxfDE8KMFEK6yCDd4YB0Z56FlKAvVorqko8xWotBvKKc5eftFjqUw0hX8oyN34x9dDQo/9FBGP7CqKZImoo4qQdAC2fvMNGd+a2E+VLa0awwHF3cWnCce33FNS+zO+PDWR2/aY4oR6HFa4hYIYXQsi2V+xOQPuN2Lf5i19b48gJquOqtkM8kjb2BM+/kX3DdPQe/ls6fMHDV4I1dTna6hghY4v0Ywa14uyV212+l09K4s9Dp/sZ91oyMsip8E8wb2XfPmAMIcZifWjK5zr0V2tIZz5dpxassyholhJgb49Ogj7G9hIqtJmlm6VK8yTqzKVZBZtv2qhDWOJGFpO2N363WNSBnXz/8CAnpgsTw8LXE8h4tRFV8zHEV4r+LdHjE3OddprQXrSEl4BZdFLaxdU5uKk5zko3U5j+PVUueu6SpTchZ2g3A0GrPkidavk/GRla+XpdMK37PcEc1VoEdhOD+SCzwm/v42KjbuMSxgMXednJnalnuG4NRcfgoGXnplVsmMymbleH2wVkXHq43DPpjMV7PyYwxfa+D0Xr/Z64C8vCcrzvBrmxHYOPQf3nzNuPBofYF4r8ff5Ki/F83dLq0QG9l0f6V3j/i0Ehz1zMZkxoc383of3Utj7KUaeDx+tUBxgjzO6bkpPYJoniHQAifIuPE5psvsjBmH5wL0RLWj6rIs68rjH5P90I7cBwAA # v1.1.2
+        with:
+          deno-version: v1.x
+
+      # Uncomment this step to verify the use of 'deno fmt' on each commit.
+      # - name: Verify formatting
+      #   run: deno fmt --check
+
+      - name: Run linter
+        run: deno lint
+
+      - name: Run tests
+        run: deno test -A

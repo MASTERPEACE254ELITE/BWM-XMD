@@ -1,6 +1,6 @@
 
 {
-  "name": "Bwm-xmd",
+  "name": "masterpeace-xmd",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
@@ -19,9 +19,9 @@
     "bmw",
     "whatsapp",
     "whatsapp-bot",
-    "Ibrahim-Adams"
+    "masterpeace-tech"
    ],
-  "author": "Ibrahim Adams",
+  "author": "masterpeace elite",
   "license": "ISC",
   "engines": {
     "node": "18.x",

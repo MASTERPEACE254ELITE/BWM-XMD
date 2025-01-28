@@ -1,6 +1,6 @@
-const { adams } = require("../Ibrahim/adams");
+const { adams } = require("../Masterpeace/elite");
 const { default :axios } = require("axios");
-const { mediafireDl } = require("../Ibrahim/dl/Function");
+const { mediafireDl } = require("../Masterpeace/dl/Function");
 
 adams({
   nomCom: "fetch",
@@ -35,12 +35,12 @@ adams({
     if (/image\/.*/.test(contentType)) {
       await _0x726ab.sendMessage(_0x34e935, {
         image: { url: fetchUrl },
-        caption: "> > *BMW MD*"
+        caption: "> > *MASTERPEACE MD*"
       }, { quoted: _0x295c2d.ms });
     } else if (/video\/.*/.test(contentType)) {
       await _0x726ab.sendMessage(_0x34e935, {
         video: { url: fetchUrl },
-        caption: "> > *BMW MD*"
+        caption: "> > *MASTERPEACE MD*"
       }, { quoted: _0x295c2d.ms });
     } else if (/text|json/.test(contentType)) {
       try {
@@ -53,7 +53,7 @@ adams({
     } else {
       await _0x726ab.sendMessage(_0x34e935, {
         document: { url: fetchUrl },
-        caption: "> > *BMW MD*"
+        caption: "> > *MASTERPEACE MD*"
       }, { quoted: _0x295c2d.ms });
     }
   } catch (error) {

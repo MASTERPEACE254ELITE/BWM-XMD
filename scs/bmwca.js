@@ -1,6 +1,6 @@
-const { adams } = require("../Ibrahim/adams");
+const { adams } = require("../masterpeace/elite");
 const canvacord = require("canvacord");
-const {uploadImageToImgur} = require("../Ibrahim/imgur")
+const {uploadImageToImgur} = require("../masterpeace/imgur")
 
 
 // Generic function to create a canvacord order

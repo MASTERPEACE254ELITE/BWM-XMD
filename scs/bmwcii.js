@@ -63,7 +63,7 @@ adams({
     'video': {
       'url': _0x504587
     },
-    'caption': "_╰►VIDEO DOWNLOADED BY_ *BMW-MD*",
+    'caption': "_╰►VIDEO DOWNLOADED BY_ *MASTERTECH-MD*",
     'gifPlayback': false
   }, {
     'quoted': _0x333a0e
@@ -309,7 +309,7 @@ adams({
         'video': {
           'url': _0x2bbae1.sd
         },
-        'caption': "_╰►VIDEO DOWNLOADED BY_ *BMW-MD*"
+        'caption': "_╰►VIDEO DOWNLOADED BY_ *MASTERTECH-MD*"
       }, {
         'quoted': _0x41f279
       });
@@ -318,13 +318,13 @@ adams({
       _0x55e155(_0x3eb21d);
     });
   } catch (_0x2b1e09) {
-    console.error("An error occurred while Bmw-Md was downloading your media:", _0x2b1e09);
-    _0x55e155("An error occurred while Bmw-Md was downloading your media.", _0x2b1e09);
+    console.error("An error occurred while mastertech-Md was downloading your media:", _0x2b1e09);
+    _0x55e155("An error occurred while mastertech-Md was downloading your media.", _0x2b1e09);
   }
 });
 
 
-const {adams} = require('../Ibrahim/adams');
+const {adams} = require('../Masterpeace/elite');
 const fs = require('fs');
 const getFBInfo = require("@xaviabot/fb-downloader");
 const { default: axios } = require('axios');
@@ -352,7 +352,7 @@ adams({nomCom : "instagram" , categorie : "Download"},async (dest , zk , command
 });
 
 
-adams({
+elite({
   nomCom: "facabook",
   categorie: "Download",
   reaction: "📽️"
@@ -375,7 +375,7 @@ async (dest, zk, commandeOptions) => {
         Lien: ${result.url}
       `;
        zk.sendMessage(dest,{image : { url : result.thumbnail}, caption : caption},{quoted : ms}) ;
-       zk.sendMessage(dest, { video: { url: result.hd  }, caption: 'facebook video downloader powered by *Bmw-MD*' }, { quoted: ms });
+       zk.sendMessage(dest, { video: { url: result.hd  }, caption: 'facebook video downloader powered by *MASTERTECH-MD*' }, { quoted: ms });
       
     })
     .catch((error) => {console.log("Error:", error)

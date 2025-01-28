@@ -1,7 +1,7 @@
 
 const util = require('util');
 const fs = require('fs-extra');
-const { adams } = require(__dirname + "/../Ibrahim/adams");
+const { adams } = require(__dirname + "/../masterpeace/elite");
 const { format } = require(__dirname + "/../Ibrahim/mesfonctions");
 const os = require("os");
 const moment = require("moment-timezone");
@@ -37,7 +37,7 @@ const date = moment().format('DD/MM/YYYY');
   let infoMsg =  `
   *Hey🖐️* *${nomAuteurMessage}*
   
-  *BMW MD IS RUNNING WITH [${cm.length}0] COMMANDS*
+  *MASTERTECHS MD IS RUNNING WITH [${cm.length}0] COMMANDS*
 
   *More commands will be out soon*
  
@@ -49,7 +49,7 @@ let menuMsg = `
 > 📅 ᴅᴀᴛᴇ: ${date} 
 
 
-> Made by : ©Ibrahim Adams 
+> Made by : © MASTERPEACE ELITE 
 `;
 
    var lien = mybotpic();
@@ -118,24 +118,24 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-   *BMW MD IMPORTANT INFO* 
+   *MASTERTECH-ELITE MD IMPORTANT INFO* 
 ❒───────────────────❒
 *GITHUB LINK*
-> https://github.com/ibrahimaitech/BMW-MD
+> https://github.com/masterpeace254elite/
 
 *WHATSAPP CHANNEL*
-> https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y
+> https://whatsapp.com/channel/0029VazeyYx35fLxhB5TfC3D
 
 *FOR MORE INFO TAP ON THE LINK BELOW*
-> https://github.com/IBRAHIM-TECH-AI/IBRAHIM-ADAMS-INFO⁠
+> contact us at 254743727510
 ╭───────────────────❒
 │❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│❒⁠⁠⁠⁠ *DEV* : *Ibrahim Adams*
+│❒⁠⁠⁠⁠ *DEV* : *masterpeace elite*
 ⁠⁠⁠⁠╰───────────────────❒
   `;
     
 let menuMsg = `
-     𝑰𝑩𝑹𝑨𝑯𝑰𝑴 𝑨𝑫𝑨𝑴𝑺 𝑺𝑪𝑰𝑬𝑵𝑪𝑬
+     MASTERTECH-ELITE - 𝑺𝑪𝑰𝑬𝑵𝑪𝑬
 
 ❒────────────────────❒`;
 

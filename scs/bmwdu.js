@@ -1,9 +1,9 @@
 
 
-const {adams } = require("../Ibrahim/adams");
+const {adams } = require("../masterpeace/elite");
 const axios = require('axios');
 const cheerio = require('cheerio');
-let func = require('../Ibrahim/mesfonctions') ;
+let func = require('../masterpeace/mesfonctions') ;
 let hdb = require('../lib/hentai') ;
 
 

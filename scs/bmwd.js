@@ -1,4 +1,4 @@
-const { adams } = require('../Ibrahim/adams');
+const { adams } = require('../masterpeace/elite');
 const axios = require("axios")
 let { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter');
 const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("../lib/banUser");
@@ -70,7 +70,7 @@ const sleep =  (ms) =>{
   
           const sticker = new Sticker(buffer.data, {
             pack: nomAuteurMessage,
-            author: "Bwm-md",
+            author: "MASTERTECH-MD",
             type: StickerTypes.FULL,
             categories: ['🤩', '🎉'],
             id: '12345',
@@ -487,7 +487,7 @@ adams({ nomCom: "save", categorie: "Mods" }, async (dest, zk, commandeOptions) =
           let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
   
           let stickerMess = new Sticker(media, {
-            pack: 'BMW-MD-TAG',
+            pack: 'MASTERTECH-MD-TAG',
             type: StickerTypes.CROPPED,
             categories: ["🤩", "🎉"],
             id: "12345",

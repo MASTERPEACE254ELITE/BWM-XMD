@@ -1,4 +1,4 @@
-const {adams}=require("../Ibrahim/adams")
+const {adams}=require("../masterpeace/elite")
 
 
 

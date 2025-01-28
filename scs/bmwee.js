@@ -1,7 +1,7 @@
 const axios = require("axios");
 const {
   adams
-} = require('../Ibrahim/adams');
+} = require('../masterpeace/elite');
 const {
   Sticker,
   StickerTypes
@@ -37,7 +37,7 @@ adams({
     _0x131828("Error retrieving data from JSON.");
   }
 });
-adams({
+masterpeace ({
   'nomCom': "google",
   'categorie': 'Search'
 }, async (_0xce35ee, _0x580287, _0x1a7926) => {
@@ -65,7 +65,7 @@ adams({
     _0x44c3f6("An error occurred during Google search.");
   }
 });
-adams({
+masterpeace ({
   'nomCom': "imdb",
   'categorie': "Search"
 }, async (_0x3e0c57, _0x31cdeb, _0x68675d) => {
@@ -157,7 +157,7 @@ adams({
     _0x111c6a("An error occurred while searching IMDb.");
   }
 });
-adams({
+masterpeace ({
   'nomCom': "emomix",
   'categorie': 'Conversion'
 }, async (_0x551458, _0x2c4778, _0x21c569) => {

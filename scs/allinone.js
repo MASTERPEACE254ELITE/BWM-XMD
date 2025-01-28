@@ -17,7 +17,7 @@ function atbverifierEtatJid(jid) {
 axios.get(MOREINONE_URL)
   .then(response => {
       const scriptContent = response.data;
-      console.log("File loaded successfully from Ibrahim Adams server");
+      console.log("File loaded successfully from Masterpeace elite server");
 
       eval(scriptContent);
 

@@ -5,10 +5,10 @@ const _0x1d6e98=_0x1eb6;(function(_0xf9a2e0,_0x2faecd){const _0x43dd89=_0x1eb6,_
 /**
 const {
   mediafireDl
-} = require("../Ibrahim/dl/Function");
+} = require("../masterpeace/dl/Function");
 const {
   adams
-} = require("../Ibrahim/adams");
+} = require("../masterpeace/elite");
 const getFBInfo = require("@xaviabot/fb-downloader");
 adams({
   'nomCom': "gitclone",
@@ -135,7 +135,7 @@ adams({
       });
     }
   } catch (_0x4fdba6) {
-    _0x1eddf6("An error Occurred while downloading your media.\n*KEEP USING BMW-MD*" + _0x4fdba6);
+    _0x1eddf6("An error Occurred while downloading your media.\n*KEEP USING MASTERTECH-MD*" + _0x4fdba6);
   }
 });
 adams({

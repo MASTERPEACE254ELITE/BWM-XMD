@@ -1,6 +1,6 @@
 
 
-const { adams } = require("../masterpeace/elite");
+const { elite } = require("../masterpeace/elite");
 const {getAllSudoNumbers,isSudoTableNotEmpty} = require("../lib/sudo")
 const conf = require("../config");
 
@@ -53,17 +53,15 @@ adams({ nomCom: "owner", categorie: "General", reaction: "🚘" }, async (dest, 
   }
 });
 
-adams({ nomCom: "dev", categorie: "General", reaction: "🚘" }, async (dest, zk, commandeOptions) => {
+adams({ nomCom: "dev", categorie: "General", reaction: "🫥" }, async (dest, zk, commandeOptions) => {
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "Ibrahim", numero: "254710772666" },
-      { nom: "᚛Baraka᚜", numero: "255762190568" },
-      { nom: "Beltah", numero: "254114141192" },
+      { nom: "masterpeace", numero: "254743727510" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "WELCOME TO BMW HELP CENTER! ASK FOR HELP FROM ANY OF THE DEVELOPERS BELOW:\n\n";
+    let message = "WELCOME TO MASTERTECHS HELP CENTER! ASK FOR HELP FROM ANY OF THE DEVELOPERS BELOW:\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
@@ -83,8 +81,8 @@ else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
         zk.sendMessage(dest, { image: { url: lien }, caption:message }, { quoted: ms });
     }
     catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
+        console.log("🥰🥰 Menu erreur " + e);
+        repondre("🥰🥰 Menu erreur " + e);
     }
 } 
 else {
